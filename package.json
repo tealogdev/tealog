@@ -1,0 +1,13 @@
+{
+  "name": "tealog",
+  "version": "0.0.1",
+  "description": "logging can be used for anything, quickly and easily",
+  "main": "index.js",
+  "repository": "https://github.com/tealogs/tealog.git",
+  "author": "Syahril Akbar Atthoriq <syahrilakbar475@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.12.8",
+    "typescript": "^5.4.5"
+  }
+}
