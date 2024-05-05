@@ -3,11 +3,33 @@
   "version": "0.0.1",
   "description": "logging can be used for anything, quickly and easily",
   "main": "index.js",
-  "repository": "https://github.com/tealogs/tealog.git",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tealogs/tealog.git"
+  },
   "author": "Syahril Akbar Atthoriq <syahrilakbar475@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint src/**/*.ts",
+    "build:dts": "tsc --declaration --declarationMap --emitDeclarationOnly",
+    "build:cjs": "babel ./src/ -d lib --extensions \".ts\" --ignore \"**/*.test.ts\"",
+    "build": "yarn build:dts && yarn build:cjs",
+    "copy": "cp ./package.json ./lib && cp ./README.md ./lib && cp ./LICENSE ./lib"
+  },
   "devDependencies": {
+    "@babel/cli": "^7.24.5",
+    "@babel/core": "^7.24.5",
+    "@babel/preset-env": "^7.24.5",
+    "@babel/preset-typescript": "^7.24.1",
+    "@types/jest": "^29.5.12",
     "@types/node": "^20.12.8",
+    "@typescript-eslint/eslint-plugin": "^7.8.0",
+    "@typescript-eslint/parser": "^7.8.0",
+    "babel-jest": "^29.7.0",
+    "eslint": "8.57.0",
+    "eslint-plugin-jest": "^28.5.0",
+    "jest": "^29.7.0",
     "typescript": "^5.4.5"
   }
 }

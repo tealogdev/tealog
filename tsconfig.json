@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "isolatedModules": true,
+    "lib": ["ES5"],
+    "target": "es5",
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "noImplicitAny": true,
+    "types": ["node"],
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "declaration": true,
+    "baseUrl": ".",
+    "outDir": "lib",
+    "emitDeclarationOnly": true,
+    "allowJs": true,
+  },
+  "include": ["src"]
+}
